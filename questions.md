@@ -46,3 +46,19 @@ Both local storage and session storage are part of the Web Storage API in modern
         Use Case: Ideal for temporary data that should only last for a single browsing session, such as data input on a multi-page form.
 
 # 7
+
+function abc(){
+console.log(abc.xyz)
+}
+abc()
+abc.xyz=400
+abc.xyz=200
+abc()
+
+# 8
+
+const num = [1,2,3]
+num[50]=100
+console.log(num)
+
+OUTPUT - [ 1, 2, 3, <47 empty items>, 100 ]
