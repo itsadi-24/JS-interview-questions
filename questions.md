@@ -115,3 +115,30 @@ long=arr[i];
 return long;
 }
 console.log(longest("I love coding in javascript"))
+
+# 13
+
+Write a function that checks whether a given string is pallindrome or not?
+
+function isPalindrome(str){
+let revstr = str.split("").reverse().join("")
+return revstr===str
+}
+console.log(isPalindrome("hihihihi"))
+
+# 14
+
+write a function to remove duplicate elements from an array
+
+function duplicate(arr){
+let uniq = []
+for(let i of arr){
+if(uniq.indexOf(i)===-1){
+uniq.push(i)
+}
+}
+return uniq
+}
+console.log(duplicate([2,2,3,4,5,6,6]))
+
+# 15
