@@ -62,3 +62,18 @@ num[50]=100
 console.log(num)
 
 OUTPUT - [ 1, 2, 3, <47 empty items>, 100 ]
+
+# 9
+
+console.log(typeof typeof 100)
+
+OUT- string
+
+# 10
+
+const arr = [...'Adi'];
+console.log(arr);
+
+OUT- [ 'A', 'd', 'i' ]
+
+# 11
