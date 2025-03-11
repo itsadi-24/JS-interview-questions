@@ -141,4 +141,40 @@ return uniq
 }
 console.log(duplicate([2,2,3,4,5,6,6]))
 
+OR
+
+function duplicates(arr){
+return [...new Set(arr)]
+}
+console.log(duplicates([2,2,3,4,5,6,6]))
+
 # 15
+
+write a function that checks whether two strings are anagram or not?
+
+function areAnagrams(an1,an2){
+return [...new Set(an1.split(""))].sort().join("") === [...new Set(an2.split(""))].sort().join("")
+}
+
+console.log(areAnagrams("silent","listen"))
+
+We can do it without set,like normally manipulating the strings too .
+
+# 16
+
+write a function that returns number of vowels in a string
+
+function noOfVowels(str){
+str=str.toLowerCase()
+let count=0
+let vowels = ['a','e','i','o','u']
+for(let i of str){
+if(vowels.indexOf(i)!=-1){
+count++
+}
+}
+return count
+}
+console.log(noOfVowels("Adi"))
+
+# 17
