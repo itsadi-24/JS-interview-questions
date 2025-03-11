@@ -77,3 +77,41 @@ console.log(arr);
 OUT- [ 'A', 'd', 'i' ]
 
 # 11
+
+write a function that returns reverse of a string
+
+function reverse(str){
+let revstr=""
+for (let index = str.length - 1; index >= 0; index--) {
+revstr+=str[index]
+}
+return revstr
+}
+console.log(reverse("Hi I am Adi"))
+
+OR
+
+function reverse(str){
+return str.split("").reverse().join("")
+}
+console.log(reverse("Hi I am Adi"))
+
+//it would first spilt it into array then reverse the array order,then join to form a string again.
+
+# 12
+
+write a function that prints longest word in a sentence
+
+function longest(str){
+let arr = str.split(" ");
+let max = arr[0].length;
+let long=""
+for (let i = 1; i < arr.length; i++) {
+if(arr[i].length>max){
+max=arr[i].length;
+long=arr[i];
+}
+}
+return long;
+}
+console.log(longest("I love coding in javascript"))
