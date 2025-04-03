@@ -13,3 +13,13 @@ function printSomething(){
 Action: This function uses console.log() to directly display the string "The program is running" in the browser's developer console (or the Node.js console if running in that environment).
 Return Value: This function does not explicitly return any value. In JavaScript, if a function doesn't have a return statement, it implicitly returns undefined.
 Output to Console: This function does produce output directly to the console.
+
+
+
+function printSomething(){
+    console.log("The program is running")
+    return "Hello"
+}
+// printSomething(); if i run this then the function will run once again so in total it will run twice
+let word = printSomething()
+console.log(word)
