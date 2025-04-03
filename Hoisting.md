@@ -7,13 +7,13 @@ let b = 5
 function printSomething(){
 console.log(a+b)
 }
+```
 i am getting error as
 ERROR!
 /tmp/UYZzZSHKP0/main.js:8
 console.log(a+b)
 ^
 ReferenceError: Cannot access 'a' before initialization
-```
 ##Answer##
 
 Okay, let's try a really simple way to think about it.
