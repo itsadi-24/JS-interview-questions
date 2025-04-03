@@ -1,5 +1,6 @@
 why is hoisting not happening in this case or is it happening?
 
+```javascript
 printSomething()
 let a = 5
 let b = 5
@@ -12,7 +13,7 @@ ERROR!
 console.log(a+b)
 ^
 ReferenceError: Cannot access 'a' before initialization
-
+```
 ##Answer##
 
 Okay, let's try a really simple way to think about it.
