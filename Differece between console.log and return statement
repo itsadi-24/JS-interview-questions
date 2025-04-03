@@ -1,0 +1,15 @@
+function printSomething(){
+    return "Hello";
+}
+Action: This function simply creates the string "Hello".
+Return Value: When you call this function, it will return the string "Hello". This returned value can then be used in other parts of your code (e.g., assigned to a variable, used in a calculation, passed to another function, etc.).
+Output to Console: This function does not directly output anything to the console.
+
+
+
+function printSomething(){
+    console.log("The program is running");
+}
+Action: This function uses console.log() to directly display the string "The program is running" in the browser's developer console (or the Node.js console if running in that environment).
+Return Value: This function does not explicitly return any value. In JavaScript, if a function doesn't have a return statement, it implicitly returns undefined.
+Output to Console: This function does produce output directly to the console.
