@@ -205,3 +205,10 @@ fact\*=i
 return fact
 }
 console.log(factorial(5))
+
+# 19 
+
+what is temporal dead zone?
+
+The Temporal Dead Zone is the time between when a variable is declared and when it is initialized — during this time, you cannot access the variable.
+It happens with variables declared using let and const.
