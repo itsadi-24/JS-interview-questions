@@ -19,7 +19,12 @@ let obj2 = {...obj}
 obj2.address.city = 'Bhubaneshwar'
 console.log("2nd",obj)
 ```
-
+```javascript
+let obj2 = {...obj}
+obj2.address.city="Bhubaneshwar"
+console.log("obj",obj)
+console.log("obj2",obj2)
+```
 # Deep Copy 
 A deep copy creates a completely independent clone, duplicating all nested objects 
 
