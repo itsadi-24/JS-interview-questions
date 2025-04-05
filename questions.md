@@ -214,3 +214,31 @@ The Temporal Dead Zone is the time between when a variable is declared and when 
 It happens with variables declared using let and const.
 The Temporal Dead Zone (TDZ) is a specific behavior in JavaScript (introduced with ES6 let and const declarations) related to the period between entering a scope and where a let or const variable is declared.
 Contrast with var: Variables declared with var are "hoisted" to the top of their function scope (or global scope) and are initialized with the value undefined. You can access a var variable before its declaration line without an error (you'll just get undefined). let and const variables are also technically hoisted (the engine knows about them at the start of the scope), but they are not initialized. They remain in the TDZ, inaccessible, until the line with their declaration is executed.
+
+# 20 
+
+Difference between spread and rest ?
+
+```
+//The spread operator expands an iterable(like an array or object) into individual elements.
+
+const user = {
+  id: 42,
+  name: 'Bob',
+  age: 35,
+  isAdmin: false,
+  address: {
+    street: '123 Main St',
+    city: 'Anytown',
+  },
+};
+
+const user2 = { ...user };
+
+//The rest parameter collects multiple elements into a single array.It's typically used in function parameters.
+
+const { id, name, ...rest } = user;
+console.log(id);
+console.log(name);
+console.log(rest);
+```
