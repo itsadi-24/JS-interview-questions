@@ -19,3 +19,23 @@ let obj2 = {...obj}
 obj2.address.city = 'Bhubaneshwar'
 console.log("2nd",obj)
 ```
+
+# Deep Copy 
+A deep copy creates a completely independent clone, duplicating all nested objects 
+
+```javascript
+let obj = {
+    name : 'Adi',
+    address:{
+        city:'Rourkela'
+    }
+}
+console.log("1st",obj)
+// let obj2 = {...obj}
+// obj2.address.city = 'Bhubaneshwar'
+// console.log("2nd",obj)
+
+let obj2 = JSON.parse(JSON.stringify(obj))
+obj2.address.city='Delhi'
+console.log("2nd",obj2)
+```
